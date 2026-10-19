@@ -5,18 +5,11 @@ workflows:
     environment:
       java: 17
     scripts:
-      - name: Find and Build APK
+      - name: Build Debug APK directly
         script: |
-          # সাব-ফোল্ডার থেকে gradlew খুঁজে বের করে পারমিশন দিয়ে বিল্ড করবে
-          GRADLEW_PATH=$(find . -name "gradlew" -type f -print -quit)
-          if [ -n "$GRADLEW_PATH" ]; then
-            DIR=$(dirname "$GRADLEW_PATH")
-            cd "$DIR"
-            chmod +x gradlew
-            ./gradlew assembleDebug
-          else
-            echo "gradlew not found!"
-            exit 1
-          fi
+          # সরাসরি আপনার সাব-ফোল্ডারের নাম দিয়ে দিন (যদি ফোল্ডারের নাম note হয়)
+          cd note || cd .
+          chmod +x gradlew
+          ./gradlew assembleDebug
     artifacts:
       - '**/app/build/outputs/apk/debug/*.apk'
