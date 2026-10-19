@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_main">#0F0F12</color>
+    <color name="bg_surface">#16161D</color>
+    <color name="bg_card">#1A1A24</color>
+    <color name="bg_card_selected">#252033</color>
+    <color name="bg_card_stroke">#282836</color>
+    <color name="bg_search_bar">#1E1E28</color>
+    <color name="bg_toolbar">#14141B</color>
+    <color name="bg_bottom_bar">#14141B</color>
+    <color name="bg_dialog">#1C1C26</color>
+
+    <!-- Brand / Accents -->
+    <color name="purple_accent">#8B5CF6</color>
+    <color name="purple_accent_light">#A78BFA</color>
+    <color name="purple_accent_dark">#6D28D9</color>
+    <color name="purple_accent_container">#281E3D</color>
+    <color name="purple_accent_container_stroke">#3D2E5C</color>
+    <color name="purple_accent_pressed">#4C1D95</color>
+    <color name="ripple_purple">#338B5CF6</color>
+
+    <!-- Typography -->
+    <color name="text_primary">#F4F4F6</color>
+    <color name="text_secondary">#9CA3AF</color>
+    <color name="text_tertiary">#6B7280</color>
+    <color name="text_link">#A78BFA</color>
+
+    <!-- Status & Functional -->
+    <color name="danger_red">#EF4444</color>
+    <color name="danger_red_container">#2D1515</color>
+    <color name="pin_gold">#FBBF24</color>
+
+    <!-- Core Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

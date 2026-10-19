@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string name="tagline">Your thoughts, organized.</string>
+    <string name="powered_by_prefix">Powered by </string>
+    <string name="brand_name">Sentrix</string>
+    <string name="search_hint">Search notes…</string>
+    <string name="no_notes_title">No notes yet</string>
+    <string name="no_notes_subtitle">Tap + to create your first note.</string>
+    <string name="no_search_results_title">No matching notes</string>
+    <string name="no_search_results_subtitle">Try searching for something else.</string>
+    <string name="title_hint">Title</string>
+    <string name="note_hint">Start typing your thoughts…</string>
+    <string name="edit">Edit</string>
+    <string name="view">View</string>
+    <string name="pin">Pin</string>
+    <string name="unpin">Unpin</string>
+    <string name="duplicate">Duplicate</string>
+    <string name="delete">Delete</string>
+    <string name="more_vert">More options</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
+    <string name="saving">Saving…</string>
+    <string name="confirm_delete_title">Delete note?</string>
+    <string name="confirm_delete_message">Are you sure you want to permanently delete this note? This action cannot be undone.</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="remove">Remove</string>
+    <string name="add_link">Add Hyperlink</string>
+    <string name="edit_link">Edit Hyperlink</string>
+    <string name="link_url_hint">https://example.com</string>
+    <string name="link_url_label">Web Link (URL)</string>
+    <string name="invalid_url_message">Please enter a valid web address.</string>
+    <string name="bold">Bold</string>
+    <string name="italic">Italic</string>
+    <string name="clear_formatting">Regular</string>
+    <string name="copy_prefix">Copy of </string>
+</resources>
