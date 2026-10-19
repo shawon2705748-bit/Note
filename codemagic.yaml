@@ -5,11 +5,20 @@ workflows:
     environment:
       java: 17
     scripts:
-      - name: Build Debug APK directly
+      - name: Build Debug APK
         script: |
-          # সরাসরি আপনার সাব-ফোল্ডারের নাম দিয়ে দিন (যদি ফোল্ডারের নাম note হয়)
-          cd note || cd .
-          chmod +x gradlew
-          ./gradlew assembleDebug
+          # প্রজেক্টের যেকোনো ফোল্ডারে gradlew খুঁজে বের করে সেই ফোল্ডারে গিয়ে বিল্ড করবে
+          GRADLE_FILE=$(find . -name "gradlew" | head -n 1)
+          
+          if [ -n "$GRADLE_FILE" ]; then
+            PROJECT_DIR=$(dirname "$GRADLE_FILE")
+            echo "Found gradlew in: $PROJECT_DIR"
+            cd "$PROJECT_DIR"
+            chmod +x gradlew
+            ./gradlew assembleDebug --stacktrace
+          else
+            echo "ERROR: gradlew file missing in repository!"
+            exit 1
+          fi
     artifacts:
       - '**/app/build/outputs/apk/debug/*.apk'
